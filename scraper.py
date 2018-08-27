@@ -30,10 +30,9 @@ while i in range(len(results)):
     if i % 9 == 0:
         x = str(results[i])
         if len(x) > 25:
-            x = str(results[i+1])
-            x = x[30:-5]
+            x = str(results[i+1].text)
         else:
-            x = x[4:-5]
+            x = str(results[i].text)
         r.append(x)
     i+=1
 
